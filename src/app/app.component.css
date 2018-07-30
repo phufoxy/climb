@@ -113,7 +113,7 @@ p, ul {
 
 #hero {
     position: relative;
-    background: url('/assets/images/cover_bg_1.jpg') no-repeat;
+    background: url('/assets/images/cover_bg_1.png') no-repeat;
     background-size: cover;
     height: 444px;
     text-align: center;
@@ -659,7 +659,7 @@ main {
     margin: 50px 2px 10px 2px;
     height: 500px;
     width: 30%;
-    background: url('/assets/images/cover_bg_1.jpg') no-repeat;
+    background: url('/assets/images/cover_bg_1.png') no-repeat;
     background-size: 100% 40%;
     padding: 10px 10px 20px 10px;
     box-shadow: 1px 1px 10px rgba(190, 194, 187, 0.6);
@@ -672,7 +672,7 @@ main {
     margin: 30px 2px 10px 2px;
     height: 390px;
     width: 30%;
-    background: url('/assets/images/cover_bg_1.jpg') no-repeat;
+    background: url('/assets/images/cover_bg_1.png') no-repeat;
     background-size: 100% 30%;
     padding: 10px 10px 20px 10px;
     box-shadow: 1px 1px 10px rgba(190, 194, 187, 0.6);
@@ -684,7 +684,7 @@ main {
     margin: 30px 2px 10px 2px;
     height: 390px;
     width: 30%;
-    background: url('/assets/images/cover_bg_1.jpg') no-repeat;
+    background: url('/assets/images/cover_bg_1.png') no-repeat;
     background-size: 100% 30%;
     padding: 10px 10px 20px 10px;
     box-shadow: 1px 1px 10px rgba(190, 194, 187, 0.6);
