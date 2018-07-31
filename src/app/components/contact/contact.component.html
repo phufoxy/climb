@@ -9,11 +9,13 @@
     </div>
   </div>
 </div>
-<header>
+<header id="header">
   <div class="container">
     <a [routerLink]="['/home']">
       <h1 class="font-learner">module</h1>
     </a>
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle" />
     <nav>
       <ul class="font-roboto">
         <li>
@@ -219,19 +221,19 @@
         <nav>
           <ul>
             <li>
-              <i class="fab fa-twitter font-roboto"></i>
+              <i class="fab fa-twitter "></i>
             </li>
             <li>
-              <i class="fab fa-facebook font-roboto"></i>
+              <i class="fab fa-facebook "></i>
             </li>
             <li>
-              <i class="fab fa-instagram font-roboto"></i>
+              <i class="fab fa-instagram "></i>
             </li>
             <li>
-              <i class="fas fa-futbol font-roboto"></i>
+              <i class="fas fa-futbol "></i>
             </li>
             <li>
-              <i class="fab fa-youtube font-roboto"></i>
+              <i class="fab fa-youtube "></i>
             </li>
           </ul>
         </nav>
@@ -241,5 +243,10 @@
         </p>
       </div>
     </div>
+  </div>
+  <div id="upscroll">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Circle-icons-arrow-up.svg/600px-Circle-icons-arrow-up.svg.png"
+      alt="Back To TOp">
+    <!-- <span id="goToTop">go to top</span> -->
   </div>
 </footer>

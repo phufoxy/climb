@@ -10,50 +10,52 @@
     </div>
   </div>
 </div>
-<header>
+<header id="header">
   <div class="container">
     <a [routerLink]="['/home']">
-        <h1 class="font-learner">module</h1>
+      <h1 class="font-learner">module</h1>
     </a>
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle" />
     <nav>
-        <ul class="font-roboto">
+      <ul class="font-roboto">
+        <li>
+          <a [routerLink]="['/home']">home</a>
+        </li>
+        <li class="dropdown">
+          <a href="">dropdown </a>
+          <i class="fa fa-caret-down"></i>
+          <ul class="dropdown-content font-roboto">
             <li>
-                <a [routerLink]="['/home']">home</a>
-            </li>
-            <li class="dropdown">
-                <a href="">dropdown </a>
-                <i class="fa fa-caret-down"></i>
-                <ul class="dropdown-content font-roboto">
-                    <li>
-                        <a href="">web design
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">css3 & html5</a>
-                    </li>
-                    <li>
-                        <a href="">angular js</a>
-                    </li>
-                    <li>
-                        <a href="">node js</a>
-                    </li>
-                    <li>
-                        <a href="">django & python</a>
-                    </li>
-                </ul>
+              <a href="">web design
+              </a>
             </li>
             <li>
-                <a [routerLink]="['/about']">about</a>
+              <a href="">css3 & html5</a>
             </li>
             <li>
-                <a [routerLink]="['/blog']">blog</a>
+              <a href="">angular js</a>
             </li>
             <li>
-                <a [routerLink]="['/contact']">contact</a>
+              <a href="">node js</a>
             </li>
-        </ul>
+            <li>
+              <a href="">django & python</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a [routerLink]="['/about']">about</a>
+        </li>
+        <li>
+          <a [routerLink]="['/blog']">blog</a>
+        </li>
+        <li>
+          <a [routerLink]="['/contact']">contact</a>
+        </li>
+      </ul>
     </nav>
-</div>
+  </div>
 </header>
 <main>
   <div id="business">
@@ -321,19 +323,19 @@
         <nav>
           <ul>
             <li>
-              <i class="fab fa-twitter font-roboto"></i>
+              <i class="fab fa-twitter "></i>
             </li>
             <li>
-              <i class="fab fa-facebook font-roboto"></i>
+              <i class="fab fa-facebook "></i>
             </li>
             <li>
-              <i class="fab fa-instagram font-roboto"></i>
+              <i class="fab fa-instagram "></i>
             </li>
             <li>
-              <i class="fas fa-futbol font-roboto"></i>
+              <i class="fas fa-futbol "></i>
             </li>
             <li>
-              <i class="fab fa-youtube font-roboto"></i>
+              <i class="fab fa-youtube "></i>
             </li>
           </ul>
         </nav>
@@ -343,5 +345,10 @@
         </p>
       </div>
     </div>
+  </div>
+  <div id="upscroll">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Circle-icons-arrow-up.svg/600px-Circle-icons-arrow-up.svg.png"
+      alt="Back To TOp">
+    <!-- <span id="goToTop">go to top</span> -->
   </div>
 </footer>
