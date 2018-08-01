@@ -124,7 +124,7 @@ p, ul {
 
 #hero {
     position: relative;
-    background: url('https://images.wallpaperscraft.com/image/greens_summer_grass_trees_clouds_sky_coast_5727_1280x720.jpg') no-repeat 0px -220px;
+    background: url('https://images.wallpaperscraft.com/image/greens_summer_grass_trees_clouds_sky_coast_5727_1280x720.jpg') no-repeat;
     background-size: cover;
     height: 444px;
     text-align: center;
@@ -222,6 +222,7 @@ header label {
 }
 
 header #toggle {
+    cursor: pointer;
     display: none;
 }
 
