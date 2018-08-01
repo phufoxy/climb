@@ -366,11 +366,20 @@ main {
     border-radius: 5px;
     margin-left: 5px;
     margin-top: 20px;
+    transition: all 1.5s ease-in-out;
 }
+
+#business .card.hidden {
+    opacity: 0;
+    transform: translateX(0px) translateY(200px);
+}
+
+/* #business .card.hidden {} */
 
 #business .card:hover {
     box-shadow: 1px 1px 10px rgba(56, 150, 6, 1);
-    transition: 0.5s ease-in-out;
+    background: rgba(56, 150, 6, 1);
+    transition: 1s ease-in-out;
 }
 
 #business .card h1 {
@@ -379,10 +388,18 @@ main {
     text-transform: capitalize;
 }
 
+#business .card:hover h1 {
+    color: #fff;
+}
+
 #business .card p {
     color: #848484;
     text-transform: inherit;
     font-size: 14px;
+}
+
+#business .card:hover p {
+    color: #fff;
 }
 
 /* #business button {
@@ -404,12 +421,18 @@ main {
 } */
 
 /* boxes */
-
 #boxes {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
+    transition: all 1.5s ease-in-out;
 }
+
+#boxes.hidden {
+    opacity: 0;
+    transform: translateX(0px) translateY(400px);
+}
+
 
 #boxes .box {
     display: inline-table;
@@ -422,6 +445,7 @@ main {
 
 #boxes .box:hover {
     box-shadow: 1px 1px 10px rgba(56, 150, 6, 1);
+    background: rgba(56, 150, 6, 1);
     transition: 0.5s ease-in-out;
 }
 
@@ -429,8 +453,12 @@ main {
     float: left;
     width: 20%;
     height: 100%;
-    color: rgba(56, 150, 6, 1);
+    color: #848484;
     font-size: 36px;
+}
+
+#boxes .box:hover i {
+    color: #fff;
 }
 
 #boxes .box .description {
@@ -440,11 +468,19 @@ main {
     margin-left: 20px;
 }
 
+#boxes .box:hover .description {
+    color: #fff;
+}
+
 #boxes .box .description h1 {
     font-size: 20px;
     color: #40423F;
     font-weight: bold;
     text-transform: capitalize;
+}
+
+#boxes .box:hover .description h1 {
+    color: #fff;
 }
 
 #boxes .box .description p {
@@ -454,10 +490,18 @@ main {
     margin-bottom: 10px;
 }
 
+#boxes .box:hover .description p {
+    color: #fff;
+}
+
 #boxes .box .description a {
     text-decoration: none;
     color: rgba(56, 150, 6, 1);
     text-transform: capitalize;
+}
+
+#boxes .box:hover .description a {
+    color: #fff;
 }
 
 #boxes .box .description a:hover {
@@ -498,6 +542,12 @@ main {
     background-size: cover;
 }
 
+#our-gallery .col-6:hover {
+    opacity: 0.5;
+    box-shadow: 1px 1px 15px rgba(206, 60, 115, 1);
+    transition: all 0.5s ease-in-out;
+}
+
 #our-gallery .col-6 .status {
     position: absolute;
     bottom: 10px;
@@ -520,6 +570,12 @@ main {
     height: 255px;
     width: 38%;
     background: red;
+}
+
+#our-gallery .col-4:hover {
+    opacity: 0.5;
+    box-shadow: 1px 1px 15px rgba(206, 60, 115, 1);
+    transition: all 0.5s ease-in-out;
 }
 
 #our-gallery .col-4 .status {
@@ -583,7 +639,8 @@ main {
 }
 
 #our-team .card:hover {
-    box-shadow: 1px 1px 10px rgba(56, 150, 6, 1);
+    box-shadow: 1px 1px 15px rgba(206, 60, 115, 1);
+    background: rgba(56, 150, 6, 1);
     transition: 0.5s ease-in-out;
 }
 
@@ -604,12 +661,20 @@ main {
     padding-top: 20px;
 }
 
+#our-team .card:hover h1 {
+    color: #fff;
+}
+
 #our-team .card h2 {
     color: #848484;
     font-size: 20px;
     opacity: 0.7;
     text-transform: capitalize;
     padding-top: 20px;
+}
+
+#our-team .card:hover h2 {
+    color: #fff;
 }
 
 #our-team .card p {
@@ -619,6 +684,10 @@ main {
     padding: 5px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+#our-team .card:hover p {
+    color: #fff;
 }
 
 /* our-experties */
@@ -645,16 +714,29 @@ main {
     padding: 10px 5px 20px 5px;
     box-shadow: 1px 1px 10px rgba(190, 194, 187, 0.6);
     border-radius: 4px;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+#our-experties .card.hidden {
+    opacity: 0;
+    transform: translateX(0px) translateY(400px);
 }
 
 #our-experties .card:hover {
     box-shadow: 1px 1px 10px rgba(56, 150, 6, 1);
+    background: rgba(56, 150, 6, 1);
+    transition: all 0.5s ease-in-out;
 }
 
 #our-experties .card i {
     color: rgba(56, 150, 6, 1);
     font-size: 46px;
     margin-bottom: 20px;
+}
+
+#our-experties .card:hover i {
+    color: #fff;
 }
 
 #our-experties .card h1 {
@@ -664,9 +746,17 @@ main {
     margin-bottom: 20px;
 }
 
+#our-experties .card:hover h1 {
+    color: #fff;
+}
+
 #our-experties .card p {
     font-size: 14px;
     text-align: center;
+}
+
+#our-experties .card:hover p {
+    color: #fff;
 }
 
 /* blog */
@@ -782,6 +872,12 @@ main {
 #our-address {
     text-align: center;
     padding: 50px;
+    transition: all 1.5s ease-in-out;
+}
+
+#our-address.hidden {
+    opacity: 1;
+    /* transform: translateX(0px) translateY(100px); */
 }
 
 #our-address .description {

@@ -15,6 +15,7 @@ export class AboutComponent implements OnInit {
   Header() {
     window.onscroll = function () {
       myScrolltop();
+      myFunction();
     }
     $(window).on('mousewheel', function () {
       $('html,body').stop();
@@ -50,14 +51,26 @@ export class AboutComponent implements OnInit {
         document.getElementById("upscroll").style.display = "none";
       }
     }
-    $(function () {
-      setTimeout(function () {
-        $('#hero .description').removeClass('hidden');
-      }, 500)
-      setTimeout(function () {
-        $('#business .card').removeClass('hidden');
-      }, 500)
-    })
-  }
+    hiddenDiv("#hero .description", 600);
+    hiddenDiv("#our-address", 600);
 
+    function myFunction() {
+      hiddenDiv("#business .card", 600);
+      hiddenDiv("#boxes", 800);
+      hiddenDiv("#our-experties .card", 700);
+
+    }
+    function hiddenDiv(element, n) {
+      let x_boxes = $(element).position();
+      let number = Number(x_boxes.top - n);
+      var x = document.body.scrollTop || document.documentElement.scrollTop;
+      if (x > number) {
+        $(function () {
+          setTimeout(function () {
+            $(element).removeClass('hidden');
+          }, 500)
+        })
+      }
+    }
+  }
 }
