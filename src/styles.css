@@ -124,7 +124,7 @@ p, ul {
 
 #hero {
     position: relative;
-    background: url('/assets/images/cover_bg_1.png') no-repeat;
+    background: url('https://images.wallpaperscraft.com/image/greens_summer_grass_trees_clouds_sky_coast_5727_1280x720.jpg') no-repeat 0px -220px;
     background-size: cover;
     height: 444px;
     text-align: center;
@@ -143,21 +143,37 @@ p, ul {
     transform: translate(-50%, -50%);
 }
 
+#hero .description.hidden {
+    opacity: 0;
+}
+
 #hero .description h1 {
     font-size: 86px;
     font-weight: bold;
     text-transform: capitalize;
     line-height: 1em;
+    opacity: 1;
+    transition: all 1.5s ease-in-out;
+}
+
+#hero .description.hidden h1 {
+    transform: translateX(0px) translateY(350px);
 }
 
 #hero .description p {
     text-transform: capitalize;
     color: #fff;
+    transition: all 1.5s ease-in-out;
+}
+
+#hero .description.hidden p {
+    transform: translateX(0px) translateY(-350px);
 }
 
 #hero .description p a {
     color: #fff;
     padding: 5px;
+    transition: all 1.5s ease-in-out;
 }
 
 #hero .description button {
@@ -681,7 +697,7 @@ main {
     margin: 50px 2px 10px 2px;
     height: 500px;
     width: 30%;
-    background: url('assets/images/cover_bg_1.png') no-repeat;
+    background: url('https://images.wallpaperscraft.com/image/lizard_forest_nature_green_73321_1280x720.jpg') no-repeat;
     background-size: 100% 40%;
     padding: 10px 10px 20px 10px;
     box-shadow: 1px 1px 10px rgba(190, 194, 187, 0.6);
@@ -694,7 +710,7 @@ main {
     margin: 30px 2px 10px 2px;
     height: 390px;
     width: 30%;
-    background: url('assets/images/cover_bg_1.png') no-repeat;
+    background: url('https://images.wallpaperscraft.com/image/lizard_nature_close-up_73318_1280x720.jpg') no-repeat;
     background-size: 100% 30%;
     padding: 10px 10px 20px 10px;
     box-shadow: 1px 1px 10px rgba(190, 194, 187, 0.6);
@@ -706,7 +722,7 @@ main {
     margin: 30px 2px 10px 2px;
     height: 390px;
     width: 30%;
-    background: url('assets/images/cover_bg_1.png') no-repeat;
+    background: url('https://images.wallpaperscraft.com/image/lizard_nature_close-up_73318_1280x720.jpg') no-repeat;
     background-size: 100% 30%;
     padding: 10px 10px 20px 10px;
     box-shadow: 1px 1px 10px rgba(190, 194, 187, 0.6);

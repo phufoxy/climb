@@ -52,6 +52,14 @@ export class ContactComponent implements OnInit {
         document.getElementById("upscroll").style.display = "none";
       }
     }
+    $(function () {
+      setTimeout(function () {
+        $('#hero .description').removeClass('hidden');
+      }, 500)
+      setTimeout(function () {
+        $('#business .card').removeClass('hidden');
+      }, 500)
+    })
   }
 
 }
