@@ -8,14 +8,35 @@ declare var $: any;
 })
 export class BlogComponent implements OnInit {
 
+  
+  slideIndex: number = 1;
+
   constructor() { }
 
   ngOnInit() {
+    this.showSlides(this.slideIndex);
     this.Header();
   }
+  nextTo(n: number) {
+    this.showSlides(this.slideIndex += n);
+  }
+  showSlides(n: number) {
+    var i;
+    var x = document.getElementsByClassName('img-slide') as HTMLCollectionOf<HTMLElement>;
+    console.log(x + "sds");
+
+    if (n > x.length) { this.slideIndex = 1 };
+    if (n < 1) { this.slideIndex = x.length };
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = 'none';
+    }
+    x[this.slideIndex - 1].style.display = 'block';
+  }
+
   Header() {
     window.onscroll = function () {
       myScrolltop();
+      myFunction();
     }
     $(window).on('mousewheel', function () {
       $('html,body').stop();
@@ -51,13 +72,26 @@ export class BlogComponent implements OnInit {
         document.getElementById("upscroll").style.display = "none";
       }
     }
-    $(function () {
-      setTimeout(function () {
-        $('#hero .description').removeClass('hidden');
-      }, 500)
-      setTimeout(function () {
-        $('#business .card').removeClass('hidden');
-      }, 500)
-    })
+    hiddenDiv("#hero .description", 600);
+    hiddenDiv("#our-address", 600);
+
+    function myFunction() {
+      hiddenDiv("#business .card", 600);
+      hiddenDiv("#boxes", 800);
+      hiddenDiv("#our-experties .card", 700);
+
+    }
+    function hiddenDiv(element, n) {
+      let x_boxes = $(element).position();
+      let number = Number(x_boxes.top - n);
+      var x = document.body.scrollTop || document.documentElement.scrollTop;
+      if (x > number) {
+        $(function () {
+          setTimeout(function () {
+            $(element).removeClass('hidden');
+          }, 500)
+        })
+      }
+    }
   }
 }

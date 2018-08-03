@@ -64,7 +64,19 @@
             <p class="description text-border-bottom font-roboto">Far far away, hehind the word mountains, far from the countries Vokailia and Consonantia, there live the blind
                 texts.
             </p>
-            <img src="https://images.wallpaperscraft.com/image/green_area_farmar_valley_82739_1280x720.jpg" alt="Banner">
+            <div class="slides">
+                <img class="img-slide" src="https://images.wallpaperscraft.com/image/green_area_farmar_valley_82739_1280x720.jpg" alt="Banner">
+                <img class="img-slide" src="assets/images/couple_hands_love_119079_1280x720.jpg" alt="Banner">
+                <img class="img-slide" src="assets/images/couple_hands_love_tenderness_coffee_118921_1280x720.jpg" alt="Banner">
+                <img class="img-slide" src="assets/images/couple_hands_tenderness_118110_1280x720.jpg" alt="Banner">
+                <button class="btn-next" (click)="nextTo(-1)">
+                    <i class="fas fa-chevron-circle-left"></i>
+                </button>
+                <button class="btn-prev" (click)="nextTo(1)">
+                    <i class="fas fa-chevron-circle-right"></i>
+                </button>
+
+            </div>
             <div class="card hidden">
                 <h1 class="font-roboto">angular js</h1>
                 <p class="font-roboto">Far far away, hehind the word mountains, far from the countries Vokailia and Consonantia, there live the
@@ -183,8 +195,8 @@
                 <h2 class="font-roboto">designer</h2>
                 <p class="font-roboto">
                     far far away, behind the word mountains far from the countries Vokalia and Consonantia, there live the blind texts, Far far
-                    away, hehind the word mountains, far from the countries vikalia and consonnantia, there live the
-                    blind texts.
+                    away, hehind the word mountains, far from the countries vikalia and consonnantia, there live the blind
+                    texts.
                 </p>
             </div>
             <div class="card">
@@ -193,18 +205,19 @@
                 <h2 class="font-roboto">designer</h2>
                 <p class="font-roboto">
                     far far away, behind the word mountains far from the countries Vokalia and Consonantia, there live the blind texts, Far far
-                    away, hehind the word mountains, far from the countries vikalia and consonnantia, there live the
-                    blind texts.
+                    away, hehind the word mountains, far from the countries vikalia and consonnantia, there live the blind
+                    texts.
                 </p>
             </div>
             <div class="card">
-                <img src="https://images.wallpaperscraft.com/image/football_player_person_andriy_shevchenko_football_75550_1280x720.jpg" alt="Person">
+                <img src="https://images.wallpaperscraft.com/image/football_player_person_andriy_shevchenko_football_75550_1280x720.jpg"
+                    alt="Person">
                 <h1 class="font-roboto">Jean Doe, XYZ Co.</h1>
                 <h2 class="font-roboto">designer</h2>
                 <p class="font-roboto">
                     far far away, behind the word mountains far from the countries Vokalia and Consonantia, there live the blind texts, Far far
-                    away, hehind the word mountains, far from the countries vikalia and consonnantia, there live the
-                    blind texts.
+                    away, hehind the word mountains, far from the countries vikalia and consonnantia, there live the blind
+                    texts.
                 </p>
             </div>
 
@@ -478,9 +491,11 @@
         </div>
     </div>
     <div id="upscroll">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Circle-icons-arrow-up.svg/600px-Circle-icons-arrow-up.svg.png"
-            alt="Back To TOp">
+        <i class="fas fa-chevron-circle-up"></i>
+
+
         <!-- <span id="goToTop">go to top</span> -->
     </div>
+
 
 </footer>

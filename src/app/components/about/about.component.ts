@@ -8,10 +8,30 @@ declare var $: any;
 })
 export class AboutComponent implements OnInit {
 
+  slideIndex: number = 1;
+
   constructor() { }
+
   ngOnInit() {
+    this.showSlides(this.slideIndex);
     this.Header();
   }
+  nextTo(n: number) {
+    this.showSlides(this.slideIndex += n);
+  }
+  showSlides(n: number) {
+    var i;
+    var x = document.getElementsByClassName('img-slide') as HTMLCollectionOf<HTMLElement>;
+    console.log(x + "sds");
+
+    if (n > x.length) { this.slideIndex = 1 };
+    if (n < 1) { this.slideIndex = x.length };
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = 'none';
+    }
+    x[this.slideIndex - 1].style.display = 'block';
+  }
+
   Header() {
     window.onscroll = function () {
       myScrolltop();
